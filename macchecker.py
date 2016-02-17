@@ -39,7 +39,7 @@ OTHER 4
 """
 
 
-PING_FREQUENCY = 10
+PING_FREQUENCY = 60
 
 """set up all of the functionality"""
 class CheckMAC:
@@ -117,7 +117,6 @@ class CheckMAC:
 	def quit(self, widget):
 		sys.exit(0)
 
-	#DEBUG: when exactly is this being called again?
 	def check_mac(self):
 		count = 0
 
@@ -136,7 +135,7 @@ class CheckMAC:
 		#now set the icons (green, yellow, orange, locked
 
 		#DEBUG
-		print 'count =' , count
+		#print 'count =' , count
 
 		if count == 0: self.ind.set_icon("user-online")
 		if count == 1: self.ind.set_icon("user-extended-away")
@@ -144,7 +143,14 @@ class CheckMAC:
 		if count == 3: self.ind.set_icon("locked")
 
 
+if __name__ == "__main__":
+	indicator = CheckMAC()
+	indicator.main()
+
+
 """
+#This is stuff from previous versions ...
+
 		if mac1 ==  mac_eth0:
 			self.ind.set_status(appindicator.STATUS_ATTENTION)
 		else:
@@ -158,15 +164,8 @@ class CheckMAC:
 		except:
 			str = "00:00:00:00:00:00"
 		return str[0:17]
-"""
-
-
-if __name__ == "__main__":
-	indicator = CheckMAC()
-	indicator.main()
-
-
-"""
+		
+#==============================================
 
 #!/usr/bin/env python
 #import uuid
