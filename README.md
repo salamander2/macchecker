@@ -18,7 +18,7 @@ This program will show one of four icons depending on the state of the MAC addre
     2 = eth0 is permanent, wlan0 is random
     3 = eth0 is random, wlan0 is random
 
-![one](https://github.com/salamander2/leds/blob/master/macchecker_icons.png)
+![my icons](https://github.com/salamander2/macchecker/blob/master/macchecker_icons.png)
 
 The indicator icons were chosen for their distinct colours and shapes. (There are a lot of blue and gray icons already on my panel, so I avoided those colours).
 
