@@ -18,6 +18,8 @@ This program will show one of four icons depending on the state of the MAC addre
     2 = eth0 is permanent, wlan0 is random
     3 = eth0 is random, wlan0 is random
 
+![one](https://github.com/salamander2/leds/blob/master/macchecker_icons.png)
+
 The indicator icons were chosen for their distinct colours and shapes. (There are a lot of blue and gray icons already on my panel, so I avoided those colours).
 
 Clicking on the icon will show the permanent MAC address as well as the current one. This is just an extra verification that you can do.
