@@ -24,16 +24,17 @@ The indicator icons were chosen for their distinct colours and shapes. (There ar
 
 Clicking on the icon will show the permanent MAC address as well as the current one. This is just an extra verification that you can do.
 
-Make sure that you run the refresh option if you think something has changed.
+Make sure that you run the refresh option if you think something has changed. (The program will refresh every 60 seconds or whatever you set it to).
 
 ### To install this program
 
+* copy the program and save it as macchecker.py or whatever else you call it
+* modify it so that it has your permanent MAC addresses in it
 * `chmod u+x maccecker.py`
 * run the program from wherever you saved it. (e.g /home/salamander2/scripts/macchecker.py)
    * NOTE: run it from the GUI, not from the command line in a terminal
 * put this in the list of startup programs for Linux.
-* 
+* Requirements: the macchanger program must be installed: `sudo apt-get install macchanger` .  Python is obviously required too.
 
 ### BUGS:
-* The program will NOT refresh automatically, so I had to put a Refresh menu option. This works perfectly.
-* I don't know how to fix the bug.
+* You must enter your permanent MAC addres into the program. I'd like to use `macchanger eth0` to easily grab the permanent MAC address, so that it doesn't have to be hard coded into the program. However, I haven't done this yet.
