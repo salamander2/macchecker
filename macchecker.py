@@ -141,6 +141,8 @@ class CheckMAC:
 		if count == 1: self.ind.set_icon("user-extended-away")
 		if count == 2: self.ind.set_icon("update-notifier")
 		if count == 3: self.ind.set_icon("locked")
+		
+		return True
 
 
 if __name__ == "__main__":
